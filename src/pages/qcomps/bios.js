@@ -1,5 +1,6 @@
 export default function Bio() {
   return (
+    <div>
     <div class="intro">
       <h1>Welcome to my website!</h1>
     </div>
@@ -8,5 +9,8 @@ export default function Bio() {
       <br/><br/>
       <b>And <i>pictures</i></b> of people!
     </p>
+    </div>
   );
 }
+
+// closed everything within one additional div tag at beginning and end.

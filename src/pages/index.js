@@ -4,7 +4,7 @@
 import styles from '@/styles/Home.module.css'
 import Profile from './components/profile'
 
-export default function Home() {
+export default function Home() { // component called "Home": see styles > Home.module.css
   return (
     <div className={styles.main}>
         <Profile />
