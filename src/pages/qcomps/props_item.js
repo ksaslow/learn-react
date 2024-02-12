@@ -12,9 +12,7 @@ function Item({ name, isPacked }) {
   return tag;
 }
 
-// Jpydeep's example:
-
-
+// Joydeep's example:
 
 export default function PackingList() {
   return (
