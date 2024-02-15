@@ -4,6 +4,7 @@ export default function PersonData() {
     const [fName, setFName] = useState('');
     const [lName, setLName] = useState('');
     const [age, setAge] = useState(0);
+    // the last part of state is an Object, we give it a default value
     const [person, setPerson] = useState({fullName: '', age: 0})
 
     function handleClick() {

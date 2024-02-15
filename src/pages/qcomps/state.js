@@ -7,6 +7,8 @@ export default function Gallery() {
 
   function handleNextClick() {
     setIndex(index + 1);
+    // try instead: (but also need to change some const to a let instead)
+    // index = index + 1;
   }
 
   function handleMoreClick() {

@@ -2,16 +2,26 @@ import { useState } from 'react';
 import { sculptureList } from '../../data/data.js';
 
 export default function Gallery() {
-  const [index, setIndex] = useState(0);
+  // DEFINE the state, useing the useState HOOK:
+  const [index, setIndex] = useState(0); // compare this to index = 0 in whyState.js
+  // change const to let???
 
   function handleClick() {
-    setIndex(index + 1);
+    // use conditional rendering to avoid index out of range
+    // or you could use a modulo
+    // or you could do a try/catch and handle the error
+    if (index < sculptureList.length - 1) {
+      setIndex(index + 1);
+    } else {
+      setIndex(0);
+    }
+    
   }
 
-  let sculpture = sculptureList[index];
+  let sculpture = sculptureList[index]; // index will be 0 in the beginning
   return (
     <>
-      <button onClick={handleClick}>
+      <button onClick={handleClick}> 
         Next
       </button>
       <h2>
