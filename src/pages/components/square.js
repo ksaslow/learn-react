@@ -1,8 +1,8 @@
 import styles from '@/styles/Home.module.css';
-function Square({children}) {
+function Square({children}) { // container component. children written as JS object in {}
   return (
     <div className={styles.square}>
-      {children}
+      {children} 
     </div>
   )
 }

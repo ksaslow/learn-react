@@ -10,3 +10,6 @@ export default function Gallery() {
     </div>
   );
 }
+
+// create another component called gallery. NOT returning any HTML. Returning the custom-made 
+// ...

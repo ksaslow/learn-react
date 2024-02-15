@@ -10,7 +10,8 @@ function Avatar({person, size=100}) {
   );
 }
 
-export default function Profile() {
+export default function Profile() { // this is the Parent component.
+  // We will use Avatar component within the Parent component!
   return (
     <div>
         <Avatar
