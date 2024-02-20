@@ -8,10 +8,17 @@ export default function Scoreboard() {
   });
 
   function handlePlusClick() {
-    player.likescore++;
+    // need to use the set{} to change the state
+    // so we dont see the re-rendering happening
+    // need to update this via its corresponding set function
+    setPlayer({
+      ...player,
+      likescore: player.likescore +1
+    });
   }
 
   function handleFirstNameChange(e) {
+    // page gets re-rendered here because we have the set operation
     setPlayer({
       ...player,
       firstName: e.target.value,
@@ -20,6 +27,8 @@ export default function Scoreboard() {
 
   function handleLastNameChange(e) {
     setPlayer({
+      // here we need to first copy the rest of the properties with the spread function
+      ...player,
       lastName: e.target.value
     });
   }
