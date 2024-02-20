@@ -4,9 +4,6 @@ export default function Form() {
   // need to define the state at the very beginning
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  
-  // let firstName = '';
-  // let lastName = '';
 
   function handleFirstNameChange(e) {
     // firstName = e.target.value;
