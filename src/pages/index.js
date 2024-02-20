@@ -18,19 +18,19 @@ import List from './qcomps/list_keys_id'
 import ImagesList from './qcomps/list_keys_id'
 import RecipeList from './qcomps/recipes'
 // import Gallery from './components/whyState'
-import Gallery from './components/state'
-// import Gallery from './qcomps/state'
+//import Gallery from './components/state'
+//import Gallery from './qcomps/state'
 import PersonData from './components/stateObj'
-//cimport Form from './qcomps/stuckForm'
+import Form from './qcomps/stuckForm'
 import FeedbackForm from './qcomps/thankYouCrash'
 import Counter from './components/queueUpdates'
-import Form from './components/snapshot2'
+//import Form from './components/snapshot2'
 import RequestTracker from './qcomps/shoppingCart'
 
 export default function Home() { // component called "Home": see styles > Home.module.css
   return (
     <div className={styles.main}>
-        <RequestTracker /> 
+        <FeedbackForm/> 
     </div>
   )
 }
