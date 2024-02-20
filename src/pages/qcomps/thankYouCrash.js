@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function FeedbackForm() {
-  const [isSent, setIsSent] = useState(false);
+  const [isSent, setIsSent] = useState(false); // changes made in class
   const [message, setMessage] = useState(''); // needs to be defined outside of loop! at the beginning!
   if (isSent) {
     return <h1>Thank you!</h1>;
