@@ -14,6 +14,9 @@ export default function List() {
         onChange={e => setName(e.target.value)}
       />
       <button onClick={() => {
+        // append an element into an Array where the array is part of the state!
+        // we dont want to change the original Object, as state is read-only!
+        // this will not have any side-effects, no other objects will be changed if using the spread syntax in this way!
         setArtists([
             ...artists,
             {id: nextId++, name: name}
@@ -21,6 +24,7 @@ export default function List() {
       }}>Add</button>
       <ul>
         {artists.map(artist => (
+          // create list item by using the map function
           <li key={artist.id}>{artist.name}</li>
         ))}
       </ul>
